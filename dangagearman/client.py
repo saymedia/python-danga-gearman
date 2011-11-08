@@ -2,9 +2,9 @@
 
 import time, select, errno
 
-from gearman.compat import *
-from gearman.connection import GearmanConnection
-from gearman.task import Task, Taskset
+from dangagearman.compat import *
+from dangagearman.connection import GearmanConnection
+from dangagearman.task import Task, Taskset
 
 class GearmanBaseClient(object):
     class ServerUnavailable(Exception):

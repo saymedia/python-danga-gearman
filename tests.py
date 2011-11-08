@@ -1,11 +1,11 @@
 import os, sys, signal
 import unittest, time, socket
 
-from gearman import GearmanClient, GearmanWorker
-from gearman.connection import GearmanConnection
-from gearman.manager import GearmanManager
-from gearman.server import GearmanServer
-from gearman.task import Task
+from dangagearman import GearmanClient, GearmanWorker
+from dangagearman.connection import GearmanConnection
+from dangagearman.manager import GearmanManager
+from dangagearman.server import GearmanServer
+from dangagearman.task import Task
 
 job_servers = ["127.0.0.1"]
 

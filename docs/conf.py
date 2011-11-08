@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# python-gearman documentation build configuration file, created by
+# python-danga-gearman documentation build configuration file, created by
 # sphinx-quickstart on Mon Jul 27 14:30:15 2009.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'python-gearman'
+project = u'danga-gearman'
 copyright = u'2009, Samuel Stauffer'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -164,7 +164,7 @@ html_static_path = [] # ['_static']
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'python-gearmandoc'
+htmlhelp_basename = 'danga-gearmandoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -178,7 +178,7 @@ htmlhelp_basename = 'python-gearmandoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'python-gearman.tex', u'python-gearman Documentation',
+  ('index', 'danga-gearman.tex', u'danga-gearman Documentation',
    u'Samuel Stauffer', 'manual'),
 ]
 

@@ -2,16 +2,16 @@
 
 from distutils.core import setup
 
-from gearman import __version__ as version
+from dangagearman import __version__ as version
 
 setup(
-    name = 'gearman',
+    name = 'danga-gearman',
     version = version,
-    description = 'Gearman Library',
+    description = 'Client for the Danga (Perl) Gearman implementation',
     author = 'Samuel Stauffer',
     author_email = 'samuel@descolada.com',
-    url = 'http://github.com/samuel/python-gearman/tree/master',
-    packages = ['gearman'],
+    url = 'http://github.com/saymedia/python-danga-gearman/tree/master',
+    packages = ['dangagearman'],
     classifiers = [
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',

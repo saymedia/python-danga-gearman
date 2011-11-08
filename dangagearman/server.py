@@ -5,7 +5,7 @@ import time
 import asyncore
 import socket
 from collections import deque
-from gearman.protocol import DEFAULT_PORT, ProtocolError, parse_command, pack_command
+from dangagearman.protocol import DEFAULT_PORT, ProtocolError, parse_command, pack_command
 
 class GearmanServerClient(asyncore.dispatcher):
     def __init__(self, sock, addr, server, manager):
@@ -84,7 +84,7 @@ class GearmanServerClient(asyncore.dispatcher):
                 self.send_buffered("%s\t%d\t%d\t%d\n" % (s['func'], s['num_jobs'], s['num_working'], s['num_workers']))
             self.send_buffered(".\n")
         elif func == "version":
-            from gearman import __version__
+            from dangagearman import __version__
             self.send_buffered("%s\n" % __version__)
         elif func == "workers":
             for client, state in self.manager.states.items():

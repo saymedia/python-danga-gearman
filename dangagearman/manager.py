@@ -2,7 +2,7 @@
 
 import socket
 
-from gearman.connection import DEFAULT_PORT, GearmanConnection
+from dangagearman.connection import DEFAULT_PORT, GearmanConnection
 
 ConnectionError = GearmanConnection.ConnectionError
 

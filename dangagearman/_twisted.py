@@ -4,10 +4,10 @@ from __future__ import with_statement
 
 import time, select, errno
 
-from gearman.compat import *
-from gearman.connection import GearmanConnection
-from gearman.task import Task, Taskset
-from gearman.client import GearmanClient
+from dangagearman.compat import *
+from dangagearman.connection import GearmanConnection
+from dangagearman.task import Task, Taskset
+from dangagearman.client import GearmanClient
 
 from twisted.internet import abstract, defer, reactor
 

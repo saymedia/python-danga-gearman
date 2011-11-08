@@ -1,10 +1,10 @@
 import random, sys, select, logging
 from time import time
 
-from gearman.compat import *
-from gearman.client import GearmanBaseClient
+from dangagearman.compat import *
+from dangagearman.client import GearmanBaseClient
 
-log = logging.getLogger("gearman")
+log = logging.getLogger("dangagearman")
 
 class GearmanJob(object):
     def __init__(self, conn, func, arg, handle):

@@ -1,9 +1,9 @@
 import socket, struct, select, errno, logging
 from time import time
 
-from gearman.protocol import DEFAULT_PORT, pack_command, parse_command
+from dangagearman.protocol import DEFAULT_PORT, pack_command, parse_command
 
-log = logging.getLogger("gearman")
+log = logging.getLogger("dangagearman")
 
 class GearmanConnection(object):
     class ConnectionError(Exception):
