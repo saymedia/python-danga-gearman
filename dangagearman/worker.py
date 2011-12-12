@@ -39,7 +39,7 @@ class GearmanWorker(GearmanBaseClient):
     def register_class(self, clas, name=None, decorator=None):
         """Register all the methods of a class or instance object with
         with gearman.
-        
+
         'name' is an optional prefix for function names (name.method_name)
         """
         obj = clas
