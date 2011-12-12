@@ -116,6 +116,7 @@ class GearmanWorker(GearmanBaseClient):
         except Exception:
             if hooks:
                 hooks.fail(job, sys.exc_info())
+            log.error("Job failed: %s" % str(sys.exc_info()))
             job.fail()
         else:
             if hooks:
